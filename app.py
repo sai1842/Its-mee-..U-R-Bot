@@ -1,12 +1,12 @@
 from openai import OpenAI
 import streamlit as st
 
-st.title("CJ Bot")
+st.title("Its-mee-U-R-Bot")
 
 client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 
 if "openai_model" not in st.session_state:
-    st.session_state["openai_model"] = "gpt-3.5-turbo"
+    st.session_state["openai_model"] = "gpt-4.0-turbo"
 
 if "messages" not in st.session_state:
     st.session_state.messages = []
